@@ -1,14 +1,23 @@
 // Home Content
-
 .home {
+  
 
   .intro {
+
     .header-img {
       @media @phone {
         width: 100%;
         height: 0 auto;
       }
     }
+
+      .lift-off {
+        @media @phone {
+          padding: 0 1.2rem 0 1.2rem;
+        }
+      }
+    
+      
 
     h2 {
       padding: 15px;
@@ -24,29 +33,45 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-
+   
     @media @phone {
-      flex-direction: column-reverse;
-      align-items: center;
-      width: 100%;
-  }
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+    }
+
+      
+
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone {
+        width: 90%;
+      }
     }
 
-    .img-1 {
+    .img-2, .img-3 {
       @media @phone {
         display: none;
       }
     }
+        
   }
 
   .visit-planets {
     padding: 15px;
+
+      @media @phone {
+        padding: 1 1.2rem 0 1.2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+
+     
 
     h3 {
       margin-top: 11px;
@@ -64,9 +89,24 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      width:100%;
+      padding: 1.6rem;
+    }
+
+
     .walk-text {
       width: 50%;
 
+        @media @phone {
+          width: 100%;
+          padding: 1rem;
+      }
+
+        
       h3 {
         margin-bottom: 10px;
       }
@@ -81,23 +121,48 @@
         font-size: 1.8rem;
         padding: 0.8rem 2rem 0.8rem 2rem;
         border-radius: 0.6rem;
+        color: white; 
       
-      }
 
-      .btn:hover {
-        background-color: lighten(@btn-bg-color,git  20%);     
-      }
+          @media @phone {
+            display: block;
+            text-align: center;
+            padding: 2rem 0 2rem 0;
+            }
+          }
 
-        .btn a {
-          color: white;
-          text-decoration: none;
+          .btn a {
+            color: white;
+            text-decoration: none;
+
+              @media @phone {
+                font-size: 2.2rem;
+              }
+          }
+
+          .btn:hover {
+          background-color: lighten(@btn-bg-color, 20%);     
         }
-    }
+
+         }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 1.2rem;
+      }
       
+        .space-walk-img {
+          @media @phone {
+            width: 100%;
+            height: 0 auto;
+          }
+        }
       img {
         width: 100%;
         height: auto;
@@ -105,4 +170,4 @@
       }
     }
   }
-}// home
+}
