@@ -180,7 +180,7 @@ p {
 }
 .navigation .heading h1 {
   font-size: 4rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
 }
 .navigation nav {
   padding-bottom: 2rem;
@@ -206,7 +206,7 @@ footer {
   align-items: center;
 }
 .home .intro {
-  margin-top: 12rem;
+  margin-top: 13rem;
 }
 @media (max-width: 500px) {
   .home .intro .intro {
@@ -315,6 +315,12 @@ footer {
   padding: 0.8rem 2rem 0.8rem 2rem;
   border-radius: 0.6rem;
   color: white;
+  animation-name: btn-animation;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  transition-property: transform;
+  transition-duration: 1s;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
@@ -333,7 +339,16 @@ footer {
   }
 }
 .home .walk .walk-text .btn:hover {
-  background-color: #48547a;
+  /* background-color: lighten(@btn-bg-color, 20%);  */
+  transform: rotateY(180deg);
+}
+@keyframes btn-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .home .walk .walk-img {
   width: 46%;

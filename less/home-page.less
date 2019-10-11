@@ -2,7 +2,7 @@
 .home {
 
   .intro {
-    margin-top: 12rem;
+    margin-top: 13rem;
 
   .intro {
     @media @phone {
@@ -17,6 +17,7 @@
         height: 0 auto;
       }
     }
+
 
       .lift-off {
         @media @phone {
@@ -41,6 +42,7 @@
     flex-wrap: wrap;
     width: 100%;
    
+   
     @media @phone {
         flex-direction: column-reverse;
         align-items: center;
@@ -55,6 +57,7 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+ 
 
       @media @phone {
         width: 90%;
@@ -132,6 +135,13 @@
         padding: 0.8rem 2rem 0.8rem 2rem;
         border-radius: 0.6rem;
         color: white; 
+        animation-name: btn-animation;
+        animation-duration: 3s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+    
+        transition-property: transform;
+        transition-duration: 1s;
       
 
           @media @phone {
@@ -151,8 +161,14 @@
           }
 
           .btn:hover {
-          background-color: lighten(@btn-bg-color, 20%);     
+         /* background-color: lighten(@btn-bg-color, 20%);  */   
+          transform: rotateY(180deg);
         }
+
+        @keyframes btn-animation {
+          0% {opacity:0}
+          100% {opacity:1}
+      }
 
          }
 
