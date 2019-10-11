@@ -170,6 +170,11 @@ p {
   position: fixed;
   top: 0;
 }
+@media (max-width: 500px) {
+  .navigation {
+    align-items: flex-start;
+  }
+}
 .navigation .heading {
   padding: 2rem;
 }
