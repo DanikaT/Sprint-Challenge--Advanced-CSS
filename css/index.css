@@ -166,6 +166,9 @@ p {
   justify-content: center;
   align-items: center;
   background-color: #F6F6F6;
+  width: 800px;
+  position: fixed;
+  top: 0;
 }
 .navigation .heading {
   padding: 2rem;
@@ -192,8 +195,11 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .intro {
+  margin-top: 12rem;
+}
 @media (max-width: 500px) {
-  .home .intro {
+  .home .intro .intro {
     padding: 1rem 1.2rem 0.8rem 1.2rem;
   }
 }
@@ -269,8 +275,9 @@ footer {
 @media (max-width: 500px) {
   .home .walk {
     flex-direction: column-reverse;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    /* .phone-layout-flexbox(center, center);*/
     width: 100%;
     padding: 1rem 1.2rem 1rem 1.2rem;
     margin-top: 1.6rem;
