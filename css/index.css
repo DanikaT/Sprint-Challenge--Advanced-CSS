@@ -315,12 +315,13 @@ footer {
   padding: 0.8rem 2rem 0.8rem 2rem;
   border-radius: 0.6rem;
   color: white;
+  opacity: 0;
   animation-name: btn-animation;
   animation-duration: 3s;
   animation-delay: 3s;
   animation-fill-mode: forwards;
   transition-property: transform;
-  transition-duration: 1s;
+  transition-duration: 2s;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
@@ -372,4 +373,8 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.sign-up-form {
+  margin-top: 20rem;
+  margin-bottom: 50rem;
 }
